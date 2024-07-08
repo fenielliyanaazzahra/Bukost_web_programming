@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bukost</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-secondary">
+    <div class="container p-0 border mb-4 mt-4 rounded-6 shadow bg-white">
+        <!--menu-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark d-md-flex p-4">
+            <a class="navbar-brand" href="#">Bukost</a>
+            <button class="navbar-toggler" 
+            type="button" 
+            data-toggle="collapse" 
+            data-target="#navbarSupportedContent" 
+            aria-controls="navbarSupportedContent" 
+            aria-expanded="false" 
+            aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#Beranda">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#card">Kostan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Tentang">Tentang Kami</a>
+                    </li>
+                    <!-- tambahkan menu lainnya -->
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Cari Kostan" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Cari</button>
+                </form>
+            </div>
+        </nav>
+        <!--banner-->
+        <div class="px-4 mb-4">
+            <img src="https://i.pinimg.com/564x/07/54/26/0754264a365130bae5ef85e9874dc1e3.jpg" class="w-100" alt=""/>
+        </div>
+        <div class="container mt-4">
+            <h1>Selamat Datang di Kostan Online</h1>
+            <p>Cari dan pesan kostan dengan mudah!</p>
+            <!-- tambahkan konten lainnya -->
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <h2>Pencarian Kostan</h2>
+        <form>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputLocation">Lokasi</label>
+                    <input type="text" class="form-control" id="inputLocation" placeholder="Masukkan lokasi">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputPriceRange">Rentang Harga</label>
+                    <select id="inputPriceRange" class="form-control">
+                        <option selected>Pilih rentang harga...</option>
+                        <option value="0-500000">0 - 500.000</option>
+                        <option value="500000-1000000">500.000 - 1.000.000</option>
+                        <option value="1000000-1500000">1.000.000 - 1.500.000</option>
+                        <option value="1500000-2000000">1.500.000 - 2.000.000</option>
+                        <option value="2000000+">Lebih dari 2.000.000</option>
+                    </select>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Cari</button>
+        </form>
+        
+        <!--Card Kostan-->
+        <div id="card" class="row cols-md-3 p-5">
+             <div class="col">
+                <div class="card shadow">
+                    <img src="https://th.bing.com/th?id=OIP.7PnfxBeQD48iI2qbWdDiNAHaFn&w=287&h=217&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"
+                    class="card-img-top">
+                    <div class="card-body">
+                        <p class="card-text">kostan sederhana</p>
+                        <div class="d-none deskripsi">
+                            <p>
+                              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                              Temporibus optio unde consequuntur nesciunt earum consectetur
+                              hic quasi ipsum animi necessitatibus dolorem, inventore ipsa
+                              esse harum rem neque assumenda quod reprehenderit ea quibusdam
+                              delectus vel excepturi! Architecto odit optio minima dolore sit
+                              minus, omnis hic numquam!
+                            </p>
+                          </div>
+                        <div class="card-footer d-flex">
+                                <p class="ms-auto text-danger fw-bold d-block text-center harga">Rp. 500.000,00</p>
+                                <a class="btn btn-sm btn-primary d-block btnDetail">detail</a>
+                        </div>
+                    </div>
+                </div>                                                                                   
+            </div>
+             <div class="col">
+                <div class="card shadow">
+                    <img src="https://th.bing.com/th/id/OIP.1DtXmsFnj5tKhJT55-qnlgHaFj?w=241&h=181&c=7&r=0&o=5&pid=1.7"
+                    class="card-img-top">
+                    <div class="card-body">
+                        <p class="card-text">kostan mawar</p>
+                        <div class="card-footer d-flex">
+                            <div class="item">
+                                <p class="ms-auto text-danger fw-bold d-block text-center harga">Rp. 1.500.000,00</p>
+                                <a class="btn btn-sm btn-primary d-block btnDetail">detail</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow">
+                    <img src="https://th.bing.com/th/id/OIP.-4tKDD16f4l7luRYEEQZBwHaFj?w=241&h=181&c=7&r=0&o=5&pid=1.7"
+                    class="card-img-top">
+                    <div class="card-body">
+                        <p class="card-text">kostan kamboja</p>
+                        <div class="card-footer d-flex">
+                            <div class="item">
+                                <p class="ms-auto text-danger fw-bold d-block text-center harga">Rp. 2.000.000,00</p>
+                                <a class="btn btn-sm btn-primary d-block btnDetail">detail</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow">
+                    <img src="https://th.bing.com/th?id=OIP.hWL2NNQy2qQRj4KoxiuR2AHaFj&w=288&h=216&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"
+                    class="card-img-top">
+                    <div class="card-body">
+                        <p class="card-text">kostan asri</p>
+                        <div class="card-footer d-flex">
+                            <div class="item">
+                                <p class="ms-auto text-danger fw-bold d-block text-center harga">Rp. 3.000.000,00</p>
+                                <a class="btn btn-sm btn-primary d-block btnDetail">detail</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="card" class="row cols-md-3 p-5">
+            <div class="col">
+               <div class="card shadow">
+                   <img src="https://lh3.googleusercontent.com/hDy2Iu-H9xEnR0yjdoXGDSUGsPRggMb-N5NJe5c1fOlXx4wAODpn4ORFI1MxBJBT-sbRfHV9cKewlUnAkCBPbW8apzsJxxxRwLSP6JfeEhypWXM3w7SkMo6r8cdf8XGpe3lfjI4I"
+                   class="card-img-top">
+                   <div class="card-body">
+                       <p class="card-text">kostan dandelion</p>
+                       <div class="card-footer d-flex">
+                           <div class="item">
+                               <p class="ms-auto text-danger fw-bold d-block text-center harga">Rp. 4.500.000,00</p>
+                               <a class="btn btn-sm btn-primary d-block btnDetail">detail</a>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           <div class="col">
+            <div class="card shadow">
+                <img src="https://berita.99.co/wp-content/uploads/2022/08/kost-gaya-kekinian.jpg"
+                class="card-img-top">
+                <div class="card-body">
+                    <p class="card-text">kostan yana</p>
+                    <div class="card-footer d-flex">
+                        <div class="item">
+                            <p class="ms-auto text-danger fw-bold d-block text-center harga">Rp. 6.500.000,00</p>
+                            <a class="btn btn-sm btn-primary d-block btnDetail">detail</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><div class="col">
+            <div class="card shadow">
+                <img src="https://th.bing.com/th/id/OIP.DlE3-fn4cjkqWPF3v8y3CwHaE8?w=245&h=180&c=7&r=0&o=5&pid=1.7"
+                class="card-img-top">
+                <div class="card-body">
+                    <p class="card-text">kostan edelwis</p>
+                    <div class="card-footer d-flex">
+                        <div class="item">
+                            <p class="ms-auto text-danger fw-bold d-block text-center harga">Rp. 8.000.000,00</p>
+                            <a class="btn btn-sm btn-primary d-block btnDetail">detail</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card shadow">
+                <img src="https://th.bing.com/th/id/OIP.dklIFonRlELkPa2XXDR7egHaFj?w=244&h=183&c=7&r=0&o=5&pid=1.7"
+                class="card-img-top">
+                <div class="card-body">
+                    <p class="card-text">kostan puspa sari</p>
+                    <div class="card-footer d-flex">
+                        <div class="item">
+                            <p class="ms-auto text-danger fw-bold d-block text-center harga">Rp. 15.000.000,00</p>
+                            <a class="btn btn-sm btn-primary d-block btnDetail">detail</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tentang Kami -->
+        <div id="Tentang" class="mt-4 px-4 py-4 bg-white text-center rounded-3">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <h3 class="">Tentang Kami</h3>
+                        <p class="text-center ">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque odio quidem eum ratione repellat,
+                            ducimus est quae similique totam a voluptates obcaecati consequuntur nostrum sequi. 
+                            Molestias impedit temporibus cupiditate sit.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- footer -->
+    <div class="text-center text-white p-4 border-top">&copy; 2024 Bukost kostan online</div>
+
+    <!-- scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
